@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dark {
+  background-color: #392f5a;
+  color: #e5e7eb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.7s ease-in-out forwards;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-in-out forwards;
+}
+
+html {
+  scroll-behavior: smooth;
+  @apply transition-colors duration-300;
+}
+
+/* Ensure header is always visible */
+header {
+  display: block !important;
+  visibility: visible !important;
+  position: relative !important;
+  z-index: 20 !important;
+}
+
+/* Ensure main content area has proper spacing */
+main {
+  min-height: 0;
+  flex: 1;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
