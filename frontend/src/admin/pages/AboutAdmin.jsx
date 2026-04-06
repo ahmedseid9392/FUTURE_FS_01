@@ -9,13 +9,13 @@ import {
   CheckCircle,
   AlertCircle,
   Loader2,
-  BookOpen,
+  
   Briefcase,
   FileText,
   GraduationCap,
   Building,
-  Calendar,
-  MessageSquare
+  Calendar
+
 } from "lucide-react";
 import API from "../../api/api";
 

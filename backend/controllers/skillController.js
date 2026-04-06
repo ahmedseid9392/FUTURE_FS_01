@@ -14,8 +14,7 @@ export const createSkill = async (req,res)=>{
 
   const { name, description, icon, category, experience } = req.body;
 
-  console.log("Incoming skill:", req.body);
-
+ 
   const skill = new Skill({
    name,
    description,

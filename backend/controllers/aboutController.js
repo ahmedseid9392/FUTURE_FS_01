@@ -1,6 +1,6 @@
 import About from "../models/about.js";
 
-// GET
+// GET about text
 export const getAbout = async(req,res)=>{
 
  let about = await About.findOne();

@@ -6,8 +6,6 @@ import {
   Calendar, 
   Trash2, 
   CheckCircle, 
-  XCircle,
-  Reply,
   X,
   Send,
   AlertCircle,
@@ -15,8 +13,7 @@ import {
   Loader2,
   Inbox,
   MessageSquare,
-  Eye,
-  Archive
+  Eye
 } from "lucide-react";
 import API from "../../api/api";
 

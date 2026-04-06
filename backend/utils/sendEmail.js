@@ -23,7 +23,7 @@ export const sendEmail = async ({ name, email, subject, message }) => {
   `
  });
 
- // ✅ AUTO REPLY TO USER
+ //  AUTO REPLY TO USER
  await transporter.sendMail({
   to: email,
   subject: "We received your message",

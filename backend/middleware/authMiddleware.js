@@ -20,7 +20,7 @@ const protectAdmin = async (req, res, next) => {
       return res.status(401).json({ message: "Admin not found" });
     }
 
-    req.admin = admin; // ✅ FIXED
+    req.admin = admin; 
 
     next();
 

@@ -10,12 +10,8 @@ import {
   Linkedin, 
   Twitter,
   MapPin,
-  Award,
   Code2,
-  Briefcase,
-  Users,
   FileText,
-  ExternalLink,
   Loader2,
   AlertCircle,
   Eye
@@ -58,8 +54,7 @@ export default function Home({ openLoginModal }) {
   const getCloudinaryWorkingUrl = (url, download = false) => {
     if (!url || !url.includes('cloudinary.com')) return url;
     
-    // Your files are stored as images, so keep /image/upload/
-    // But add fl_attachment for forced download
+    
     if (download && url.includes('/upload/')) {
       return url.replace('/upload/', '/upload/fl_attachment/');
     }

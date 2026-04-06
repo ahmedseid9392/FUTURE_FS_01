@@ -8,8 +8,8 @@ const storage = new CloudinaryStorage({
   params: {
     folder: "portfolio",
     allowed_formats: ["jpg", "png", "jpeg", "svg", "pdf", "doc", "docx"],
-    access_mode: "public",  // Important
-    resource_type: "auto",  // Important
+    access_mode: "public",  
+    resource_type: "auto",  
     use_filename: true,
     unique_filename: true
   }

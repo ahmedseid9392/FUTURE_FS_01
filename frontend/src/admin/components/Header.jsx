@@ -1,4 +1,4 @@
-// admin/components/Header.jsx
+
 import { useState, useEffect } from "react";
 import { Menu, Bell, User, LogOut, Moon, Sun, ChevronDown } from "lucide-react";
 

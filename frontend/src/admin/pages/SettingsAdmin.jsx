@@ -12,15 +12,13 @@ import {
   Loader2,
   Globe,
   Palette,
-  Layout,
-  Mail,
+ Mail,
   Key,
   Shield,
   Moon,
   Sun,
-  Monitor,
-  ChevronDown,
-  ChevronUp
+  Monitor
+  
 } from "lucide-react";
 import API from "../../api/api";
 import toast from "react-hot-toast";

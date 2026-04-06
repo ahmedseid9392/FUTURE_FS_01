@@ -1,4 +1,4 @@
-// routes/upload.js - Add this endpoint
+
 import express from "express";
 import upload from "../middleware/uploadMiddleware.js";
 import { uploadImage } from "../controllers/uploadController.js";
@@ -9,12 +9,12 @@ const router = express.Router();
 
 router.post("/", protectAdmin, upload.single("image"), uploadImage);
 
-// Add this endpoint to make existing files public
+
 router.post("/make-public/:publicId", protectAdmin, async (req, res) => {
   try {
     const { publicId } = req.params;
     
-    // Update the file to public access mode
+   
     const result = await cloudinary.api.update(publicId, {
       access_mode: 'public',
       resource_type: 'auto'
@@ -33,7 +33,7 @@ router.post("/make-public/:publicId", protectAdmin, async (req, res) => {
     });
   }
 });
-// Add this endpoint to your backend
+
 router.get("/get-cv/:profileId", protectAdmin, async (req, res) => {
   try {
     const profile = await Profile.findById(req.params.profileId);
@@ -41,13 +41,13 @@ router.get("/get-cv/:profileId", protectAdmin, async (req, res) => {
       return res.status(404).json({ error: "CV not found" });
     }
     
-    // Generate a signed URL for the CV
+    
     const publicId = profile.cv.split('/').pop().split('.')[0];
     const signedUrl = cloudinary.url(publicId, {
       resource_type: 'raw',
       secure: true,
       sign_url: true,
-      type: 'authenticated' // This creates a signed URL
+      type: 'authenticated' 
     });
     
     res.json({ url: signedUrl });

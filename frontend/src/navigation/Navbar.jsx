@@ -11,8 +11,8 @@ import {
   User,
   Code2,
   FolderGit2,
-  Mail,
-  ChevronDown
+  Mail
+  
 } from "lucide-react";
 import logo from "../assets/logo.jpg";
 

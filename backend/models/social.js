@@ -4,7 +4,7 @@ const socialSchema = new mongoose.Schema({
 
  name:String,
  url:String,
- icon:String // ex: "fab fa-github"
+ icon:String 
 
 },{timestamps:true});
 

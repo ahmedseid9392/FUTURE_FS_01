@@ -24,12 +24,12 @@ connectDB();
 app.use(express.json());
 
 
-// ✅ Correct CORS configuration
+// Correct CORS configuration
 app.use(cors({
   origin: [
-    'https://ahmedseidali.vercel.app',  // your current frontend
-    'https://my-react-portfolio-wine.vercel.app', // old frontend (optional)
-    'http://localhost:5173' // local dev (optional)
+    'https://ahmedseidali.vercel.app',  
+    'https://my-react-portfolio-wine.vercel.app', 
+    'http://localhost:5173' 
   ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   credentials: true
@@ -50,9 +50,7 @@ app.use("/api", settingsRoutes);
 
 app.use("/api/about", aboutRoutes);
 
-app.get("/", (req, res) => {
-  res.send("Portfolio Backend API Running");
-});
+
 
 const PORT = process.env.PORT || 5000;
 

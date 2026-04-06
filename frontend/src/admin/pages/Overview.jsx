@@ -5,16 +5,11 @@ import {
   Code2, 
   Mail, 
   Users, 
-  Eye, 
-  Star,
   TrendingUp,
   MessageSquare,
   CheckCircle,
   Clock,
   User,
-  Briefcase,
-  Award,
-  Calendar,
   ArrowUp,
   ArrowDown
 } from "lucide-react";
@@ -22,9 +17,7 @@ import API from "../../api/api";
 import {
   LineChart,
   Line,
-  BarChart,
-  Bar,
-  PieChart,
+ PieChart,
   Pie,
   Cell,
   AreaChart,

@@ -10,8 +10,7 @@ import {
   Phone, 
   MapPin, 
   Clock,
-  CheckCircle,
-  AlertCircle,
+ AlertCircle,
   Loader2
 } from "lucide-react";
 
